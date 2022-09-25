@@ -1,2 +1,2 @@
 # myportfolio2
- second portfolio project ttempt
+ second portfolio project attempt
