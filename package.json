@@ -8,5 +8,20 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lugard1/myportfolio2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lugard1/myportfolio2/issues"
+  },
+  "homepage": "https://github.com/lugard1/myportfolio2#readme",
+  "devDependencies": {
+    "hint": "^7.1.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
 }
