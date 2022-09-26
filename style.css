@@ -23,7 +23,6 @@ nav {
   justify-content: space-between;
   padding: 50px 15px 10px 20px;
   background-color: #fff;
-  margin: 0px;
 }
 
 .logo {
@@ -78,10 +77,10 @@ p {
   color: #7f8cff;
 }
 
-.media-icons{
-  width: 170.17px;  
+.media-icons {
+  width: 170px;
   height: 20px; 
-  padding: 0px 0px 3px 0px;
+  padding: 1px 1px 3px 1px;
   margin: 25px;
   list-style: none;
   align-items: center;
