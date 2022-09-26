@@ -4,7 +4,7 @@
 
 .gen-container {
     width: 375px;
-    height: 690px;
+    height: 675px;
     background-color: #ebebff;
     border: 3px solid #6070ff;
 }
@@ -21,7 +21,8 @@
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 60px;
+    padding-top: 50px;
+    padding: 40px;
     padding-bottom: 10px;
     background-color: #ffffff;
 }
@@ -45,7 +46,7 @@ h1 {
     font-weight: 400;
     font-size: 40px;
     line-height: 52px;
-    margin-left: 58px;
+    margin-left: 40px;
     padding-bottom: 30px;
     padding-top: 100px;
     font-weight: 900;
@@ -59,7 +60,7 @@ p {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    margin-left: 58px;
+    margin-left: 40px;
     padding-bottom: 15px;
     color: #344563;
 
@@ -73,7 +74,7 @@ h6 {
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
-    margin-left: 58px;
+    margin-left: 40px;
     padding-bottom: 10px;
     color:#6070ff;
 }
@@ -81,6 +82,6 @@ h6 {
 .images {
     padding-top: 10px;
     padding-left: 10px;
-    margin-left: 50px;
+    margin-left: 40px;
     justify-content: space-between;
 }
