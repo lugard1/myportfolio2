@@ -6,7 +6,7 @@
   width: 375px;
   height: 672px;
   background-color: #ebebff;
-  border: 3px solid #6070ff;
+  border: 2px;
 }
 
 .container {
@@ -21,8 +21,9 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 50px 10px 10px 40px;
+  padding: 50px 15px 10px 20px;
   background-color: #fff;
+  margin: 0px;
 }
 
 .logo {
@@ -43,7 +44,8 @@ h1 {
   font-style: normal;
   font-size: 40px;
   line-height: 52px;
-  margin-left: 40px;
+  margin: auto auto;
+  color: #172b4d;
   padding-bottom: 30px;
   padding-top: 100px;
   font-weight: 900;
@@ -57,12 +59,12 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  margin-left: 40px;
+  margin: auto auto;
   padding-bottom: 15px;
   color: #344563;
 }
 
-h6 {
+.connect {
   width: 117px;
   height: 24px;
   font-family: "poppins", sans-serif;
@@ -70,14 +72,19 @@ h6 {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  margin-left: 40px;
-  padding-bottom: 10px;
-  color: #6070ff;
+  text-decoration: none;
+  margin: 25px;
+  padding-bottom: 5px;
+  color: #7f8cff;
 }
 
-.images {
-  padding-top: 10px;
-  padding-left: 10px;
-  margin-left: 40px;
+.media-icons{
+  width: 170.17px;  
+  height: 20px; 
+  padding: 0px 0px 3px 0px;
+  margin: 25px;
+  list-style: none;
+  align-items: center;
+  display: flex;
   justify-content: space-between;
 }
