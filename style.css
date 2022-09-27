@@ -6,6 +6,7 @@
   width: 375px;
   height: 718px;
   background-color: #ebebff;
+  margin: auto;
 }
 
 .content {
@@ -15,6 +16,7 @@
   border-radius: 1px 1px 1px 40px;
   background-image: url('./header-section/header-mobile-bg.svg');
   background-repeat: no-repeat;
+  margin: auto;
 }
 
 nav {
