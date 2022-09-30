@@ -565,7 +565,7 @@ p {
 }
 
 .resume:active {
-  background-color:#6070ff;
+  background-color: #6070ff;
   color: #fff;
 }
 
@@ -575,14 +575,14 @@ p {
 }
 
 .c-lang {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   padding: 30px;
   margin-top: 5px;
 }
 
 .c-js {
-  display:flex;
+  display: flex;
   background-color: #f7f7f9;
   margin: 45px;
   border-radius: 8px;
@@ -607,14 +607,13 @@ p {
 }
 
 .c-html {
-  display:flex;
+  display: flex;
   background-color: #f7f7f9;
   margin: 45px;
   border-radius: 8px;
   align-items: center;
   width: 303px;
   height: 66.72px;
-  align-items: center;
 }
 
 .html-image {
