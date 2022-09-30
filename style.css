@@ -108,7 +108,7 @@ p {
   flex: none;
   order: 0;
   flex-grow: 0;
-} 
+}
 
 .grid-container {
   display: flex;
@@ -121,7 +121,6 @@ p {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
-
 
 .w-image1 {
   padding-top: 15px;
@@ -209,12 +208,10 @@ p {
   flex-grow: 0;
 }
 
-
 #lang {
   list-style: none;
   padding: 0;
   border: none;
- 
 }
 
 #lang li {
@@ -224,7 +221,6 @@ p {
   padding: 5px 10px;
   text-align: center;
   color: #6070ff;
-  
 }
 
 .see-pro {
