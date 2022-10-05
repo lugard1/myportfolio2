@@ -783,3 +783,34 @@ textarea {
   line-height: 24px;
   color: #b3bac5;
 }
+
+#b-contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 15px 32px;
+  width: 140px;
+  height: 48px;
+  position: absolute;
+  left: 70px;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-left: 24px;
+  border: 1px solid #cfd8dc;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+#b-contact:hover {
+  background-color: #396df2;
+  color: #fff;
+}
