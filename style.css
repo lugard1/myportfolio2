@@ -1,5 +1,5 @@
 * {
-  margin: 0;
+  margin: 0 ;
 }
 
 body {
@@ -9,8 +9,10 @@ body {
 
 .overall-container {
   width: 375px;
+  height: 100%;
   margin: auto;
   background-color: #f7f7f9;
+  overflow: hidden;
 }
 
 header {
@@ -748,12 +750,14 @@ hr {
 }
 
 #name {
+  width: 327px;
   height: 50px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
 }
 
 #mail {
+  width: 327px;
   height: 50px;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
