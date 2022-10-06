@@ -249,7 +249,7 @@ p {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
-  margin-top: 45px;
+  margin-top: 30px;
   margin-bottom: 32px;
   left: 110px;
 }
@@ -807,4 +807,17 @@ textarea {
 #b-contact:hover {
   background-color: #396df2;
   color: #fff;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px/2 - 0.5px);
+  position: absolute;
+  background-color: #0d151e;
+  border-radius: 10px
 }
