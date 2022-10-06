@@ -9,8 +9,10 @@ body {
 
 .overall-container {
   width: 375px;
+  height: 100%;
   margin: auto;
   background-color: #f7f7f9;
+  overflow: hidden;
 }
 
 header {
@@ -239,6 +241,7 @@ p {
 }
 
 .see-pro {
+  display: flex;
   border-radius: 8px;
   background-color: #fff;
   padding: 10px;
@@ -248,8 +251,9 @@ p {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
-  margin-top: 28px;
+  margin-top: 30px;
   margin-bottom: 32px;
+  left: 110px;
 }
 
 .grid-container2 {
@@ -685,4 +689,139 @@ hr {
   height: 1px;
   color: #dfe1e6;
   margin-left: 20px;
+}
+
+.card2 {
+  width: 375px;
+  height: 779px;
+  background-color: #fff;
+  margin: auto;
+}
+
+.content4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./contact-images/contact form shapes-mobile-bg.svg');
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  background-position: right;
+  margin-top: 0;
+  width: 375px;
+  height: 779px;
+  border-radius: 80px 0 0 0;
+  background-color: #6070ff;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 120px;
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.p-contact {
+  width: 327px;
+  height: 102px;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 65px;
+  color: #ebebff;
+}
+
+.form-ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 90px;
+  align-items: center;
+}
+
+#name {
+  width: 327px;
+  height: 50px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
+#mail {
+  width: 327px;
+  height: 50px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
+textarea {
+  width: 327px;
+  height: 170px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
+::placeholder {
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-right: 38px;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+#b-contact {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  justify-content: center;
+  padding: 12px 32px;
+  width: 140px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-left: 24px;
+  position: relative;
+  border: 1px solid #cfd8dc;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  left: -105px;
+}
+
+#b-contact:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-top: 20px;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  position: absolute;
+  background-color: #0d151e;
+  border-radius: 10px;
 }
