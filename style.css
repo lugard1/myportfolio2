@@ -816,8 +816,8 @@ textarea {
   margin-top: 20px;
   width: 134px;
   height: 5px;
-  left: calc(50% - 134px/2 - 0.5px);
+  left: calc(50% - 134px / 2 - 0.5px);
   position: absolute;
   background-color: #0d151e;
-  border-radius: 10px
+  border-radius: 10px;
 }
