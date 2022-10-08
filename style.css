@@ -77,20 +77,6 @@ section {
   line-height: 24px;
   color: #344563;
   padding-top: 10px;
-  position: relative;
-  animation-name: paragraph;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes paragraph {
-  0% {
-    left: -1000px;
-  }
-
-  100% {
-    left: 0;
-  }
 }
 
 .lets-connect1 {
