@@ -536,4 +536,11 @@ h1 {
   transition-duration: 4s;
   transition-delay: 2s;
 }
+.Logo {
+  width: 300px;
+  height:150px;
+}
+.Logo:hover {
+  opacity:0.5;
+}
 
