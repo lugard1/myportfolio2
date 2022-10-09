@@ -410,6 +410,7 @@ textarea {
   }
 
   .name {
+    display: inline-block;
     font-size: 48px;
     width: 720px;
     height: 122px;
