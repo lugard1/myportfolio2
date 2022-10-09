@@ -525,3 +525,15 @@ textarea {
     padding-bottom: 20px;
   }
 }
+
+.project-button:hover {
+  opacity: 1;
+  color: #acb7c3;
+}
+
+h1 {
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
+}
+
