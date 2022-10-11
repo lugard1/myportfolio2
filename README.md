@@ -28,6 +28,7 @@ For the first milestone in the process of creating your portfolio website, you w
 
 ## Contributing
 contributions, issues, and feature requests are welcome!
+George [https://github.com/george827]
 
 Feel free to check the issues page.
 
