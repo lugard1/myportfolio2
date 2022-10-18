@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style: none;
+}
+
+body {
+  background-color: #fff;
 }
 
 section {
@@ -19,8 +21,9 @@ section {
 
 .header {
   display: flex;
-  padding: 12px;
   justify-content: space-between;
+  margin-top: 1px;
+  margin-bottom: 1px;
   margin-left: 48px;
   margin-right: 48px;
 }
@@ -39,6 +42,56 @@ section {
 
 .hambuger {
   cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #6070ff;
+  transform: translate(-118%);
+  position: absolute;
+  transition: all 1s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  overflow: hidden;
+  margin: 0;
+  touch-action: none;
+  -ms-touch-action: none;
+  height: 100%;
+}
+
+.show {
+  transform: translate(-13%);
+  backdrop-filter: blur(10px);
+}
+
+.menu-list li a {
+  color: #fff;
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+ul .list-item {
+  margin-top: 2rem;
+}
+
+ul .list-item,
+.list-item2 {
+  margin-bottom: 1.5rem;
+}
+
+.close .ion {
+  color: #fff;
+  padding: 5px;
+  margin-top: 20px;
+  border: 2px solid #67798e;
 }
 
 .bar {
@@ -123,7 +176,7 @@ img:hover {
 
 .project-review {
   font-size: 32px;
-  font-family: sans-serif, 'Poppins';
+  font-family: sans-serif, "Poppins";
   font-weight: 700;
   font-style: normal;
   line-height: 44px;
@@ -142,7 +195,7 @@ img:hover {
 .canopy {
   width: 55px;
   height: 16px;
-  font-family: sans-serif, 'Poppins';
+  font-family: sans-serif, "Poppins";
   font-size: 13px;
   font-weight: 600;
   font-style: normal;
@@ -194,10 +247,14 @@ img:hover {
   margin-top: 15px;
   flex-direction: row;
   align-items: center;
-  padding: 12px;
+  padding: 15px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   width: 128px;
+}
+
+.project-btn:hover {
+  background-color: #6070ff;
 }
 
 button {
@@ -209,7 +266,6 @@ button {
   color: #396df2;
   display: flex;
   cursor: pointer;
-  transform: 0.5s;
   align-items: center;
   text-align: center;
   border: none;
@@ -279,6 +335,10 @@ button:hover {
   border: 1px solid #6070ff;
   border-radius: 8px;
   width: 165px;
+}
+
+.project-btn2:hover {
+  background-color: #6070ff;
 }
 
 .language-title {
@@ -406,6 +466,10 @@ textarea {
   }
 
   .hambuger {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 

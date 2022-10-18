@@ -11,8 +11,8 @@
   <title>My Portfolio2</title>
 </head>
 <body>
-  <section class="header-section">   
     <header>
+      <section class="header-section">  
         <div class="main-container">
             <div class="header-container">
               <nav class="header">
@@ -29,11 +29,19 @@
                   <div class="bar"></div>
                   <div class="bar"></div>
                 </div>
+                <div class="mobile-menu">
+                  <ul class="menu-list">
+                    <li class="list-item"><a href="#work">Portfolio</a></li>
+                    <li class="list-item2"><a href="#about-me">About</a></li>
+                    <li class="list-item3"><a href="#contact">Contact</a></li>
+                  </ul>
+                  <a class="close" href="#"><ion-icon class="ion" name="close-outline"></ion-icon></a>
+                </div>
+              </div>
+            </div>  
               </nav>
-            </div>
-        </div>
+            </section>
     </header>
-  </section>
     <main>
     <section class="img-BG">
         <div class="main-container">
@@ -59,7 +67,7 @@
             </div>
         </div>
     </section>
-    <section class="work">
+    <section id="work" class="work">
       <div class="main-container">
         <div class="grid-container">
           <div class="project-container">
@@ -161,7 +169,7 @@
     </div>
   </div> 
   </section>
-  <section class="about-me"> 
+  <section id="about-me" class="about-me"> 
       <div class="main-container">
           <div class="aboutMe-container">
             <div class="aboutMe-grid">
@@ -193,15 +201,15 @@
                 </div> 
                   <div class="programmingLanguage-con">
                       <ul class="languages">
-                          <li><img src="images/Ellipse 1.png" alt=""></li>
+                          <li><img src="images/Ellipse 1.png" alt="JavaScript-icon"></li>
                           <li>JavaScript</li>
                       </ul>
                       <ul class="languages">
-                          <li><img src="images/Ellipse 1-2.png" alt=""></li>
+                          <li><img src="images/Ellipse 1-2.png" alt="html-icon"></li>
                           <li>HTML</li>
                       </ul>
                       <ul class="languages">
-                          <li><img src="images/Ellipse 1-3.png" alt=""></li>
+                          <li><img src="images/Ellipse 1-3.png" alt="css-icon"></li>
                           <li>CSS</li>
                       </ul>
                   </div>
@@ -224,7 +232,7 @@
   </section>
   </main>
   <footer>
-    <section>
+    <section id="contact" class="contact">
       <div class="form-container">
         <div class="contact-container">
           <h1 class="contact-header">Contact Me</h1>
@@ -241,5 +249,8 @@
       </div>
     </section>
   </footer>
+  <script src="index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
