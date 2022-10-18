@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style: none;
+}
+
+body {
+  background-color: #fff;
 }
 
 section {
@@ -61,8 +63,21 @@ section {
 }
 
 .show {
-  transform: translate(-18%);
+  transform: translate(-13%);
   backdrop-filter: blur(5px);
+}
+
+.menu-list li a {
+  color: #fff;
+}
+
+ul .list-item {
+  margin-top: 2rem;
+}
+
+ul .list-item,
+.list-item2 {
+  margin-bottom: 1.5rem;
 }
 
 .bar {
@@ -147,7 +162,7 @@ img:hover {
 
 .project-review {
   font-size: 32px;
-  font-family: sans-serif, 'Poppins';
+  font-family: sans-serif, "Poppins";
   font-weight: 700;
   font-style: normal;
   line-height: 44px;
@@ -166,7 +181,7 @@ img:hover {
 .canopy {
   width: 55px;
   height: 16px;
-  font-family: sans-serif, 'Poppins';
+  font-family: sans-serif, "Poppins";
   font-size: 13px;
   font-weight: 600;
   font-style: normal;
