@@ -19,7 +19,6 @@ section {
 
 .header {
   display: flex;
-  padding: 12px;
   justify-content: space-between;
   margin-left: 48px;
   margin-right: 48px;
@@ -39,6 +38,31 @@ section {
 
 .hambuger {
   cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background-color: #6070ff;
+  transform: translate(-120%);
+  position: absolute;
+  transition: all 2s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  overflow: hidden;
+  margin: 0;
+  touch-action: none;
+  -ms-touch-action: none;
+  height: 100vh;
+}
+
+.show {
+  transform: translate(-18%);
+  backdrop-filter: blur(5px);
 }
 
 .bar {
@@ -406,6 +430,10 @@ textarea {
   }
 
   .hambuger {
+    display: none;
+  }
+
+  .mobile-menu {
     display: none;
   }
 
