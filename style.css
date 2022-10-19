@@ -265,7 +265,6 @@ button {
   letter-spacing: 0.03em;
   color: #396df2;
   display: flex;
-  transform: 0.5s;
   cursor: pointer;
   align-items: center;
   text-align: center;
