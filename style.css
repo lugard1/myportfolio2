@@ -17,7 +17,6 @@ section {
 
 .header-section {
   background-color: #fff;
-  overflow-y: hidden;
 }
 
 .header {
@@ -50,7 +49,7 @@ section {
   justify-content: space-between;
   padding: 12px;
   background-color: #6070ff;
-  transform: translate(-120%);
+  transform: translate(-118%);
   position: absolute;
   transition: all 1s ease-in-out;
   width: 100%;
@@ -66,7 +65,7 @@ section {
 }
 
 .show {
-  transform: translate(-12.8%);
+  transform: translate(-13%);
   backdrop-filter: blur(10px);
 }
 
@@ -266,8 +265,8 @@ button {
   letter-spacing: 0.03em;
   color: #396df2;
   display: flex;
+  transform: 0.5s;
   cursor: pointer;
-  /* transform: 0.5s; */
   align-items: center;
   text-align: center;
   border: none;
