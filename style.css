@@ -54,7 +54,7 @@ section {
   position: absolute;
   transition: all 1s ease-in-out;
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
 .hide {
@@ -72,7 +72,7 @@ section {
 
 .menu-list li a {
   color: #fff;
-  font-family: "poppins" sans-serif;
+  font-family: "poppins", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -88,7 +88,7 @@ ul .list-item,
   margin-bottom: 1.5rem;
 }
 
-.close ion-icon {
+.close .ion {
   color: #fff;
   padding: 5px;
   margin-top: 20px;
@@ -274,9 +274,9 @@ button {
   background-color: white;
 }
 
- button:hover {
+button:hover {
   text-decoration: underline;
-} 
+}
 
 .aboutMe-container {
   width: 100%;
