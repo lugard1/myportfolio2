@@ -267,7 +267,7 @@ button {
   color: #396df2;
   display: flex;
   cursor: pointer;
-  transform: 0.5s;
+  /* transform: 0.5s; */
   align-items: center;
   text-align: center;
   border: none;
