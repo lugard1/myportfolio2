@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f8f9fa;
   margin: 0;
   overflow-x: hidden;
@@ -134,7 +134,7 @@ body.active {
 .portfolio-description {
   font-size: 16px;
   line-height: 24px;
-  color:  #344563;
+  color: #344563;
   margin: 12px 24px;
 }
 
@@ -230,7 +230,7 @@ body.active {
 }
 
 .project-company {
-  color:  #344563;;
+  color: #344563;
 }
 
 .project-type,
@@ -291,7 +291,7 @@ body.active {
 }
 
 .enabled-btn:active {
-  background-color:  #2230d2;
+  background-color: #2230d2;
   color: #fff;
 }
 
@@ -515,7 +515,7 @@ body.active {
 
 #form-section {
   width: 375px;
-  background: #6070ff url('./images/form-background.svg') 100% 21px;
+  background: #6070ff url("./images/form-background.svg") 100% 21px;
   background-repeat: no-repeat;
   border-top-left-radius: 80px;
   display: flex;
@@ -690,7 +690,7 @@ body.active {
 
   .nav-link a::after {
     display: block;
-    content: '';
+    content: "";
     border-bottom: solid 3px #6070ff;
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
@@ -928,5 +928,20 @@ body.active {
 
   #light-shape {
     display: none;
+  }
+
+  .name {
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 2s;
+  }
+
+  .Logo {
+    width: 300px;
+    height: 150px;
+  }
+
+  .Logo:hover {
+    opacity: 0.5;
   }
 }
