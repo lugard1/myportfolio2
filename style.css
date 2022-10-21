@@ -129,6 +129,9 @@ body.active {
   line-height: 52px;
   color: #172b4d;
   padding: 128px 24px 0;
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-delay: 2s;
 }
 
 .portfolio-description {
@@ -443,14 +446,13 @@ body.active {
 
 #about-myself .header {
   margin-top: 0;
-  /* padding-top: 114px; */
   font-family: "poppins", sans-serif;
   font-style: normal;
   font-size: 40px;
   font-weight: 700;
   line-height: 52px;
   color: #172b4d;
-  padding: 114px 24px;
+  padding: 114px 24px 12px 24px;
 }
 
 #skills {
@@ -515,6 +517,7 @@ body.active {
 
 #form-section {
   width: 375px;
+  height: 779px;
   background: #6070ff url("./images/form-background.svg") 100% 21px;
   background-repeat: no-repeat;
   border-top-left-radius: 80px;
@@ -579,21 +582,6 @@ body.active {
   line-height: 24px;
   padding: 15px 16px;
 }
-
-/* #email.active {
-  border: 2px solid #ba181b;
-  color: #ba181b;
-  margin-bottom: 0;
-}
-
-#email-error-msg {
-  font-size: 16px;
-  color: #ba181b;
-  font-weight: 600;
-  margin-bottom: 20px;
-  margin-top: 2px;
-  align-self: flex-start;
-} */
 
 #submit-button {
   width: 140px;
@@ -929,19 +917,13 @@ body.active {
   #light-shape {
     display: none;
   }
+}
 
-  .name {
-    transition-property: font-size;
-    transition-duration: 4s;
-    transition-delay: 2s;
-  }
+.Logo {
+  width: 300px;
+  height: 150px;
+}
 
-  .Logo {
-    width: 300px;
-    height: 150px;
-  }
-
-  .Logo:hover {
-    opacity: 0.5;
-  }
+.Logo:hover {
+  opacity: 0.5;
 }
