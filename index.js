@@ -99,8 +99,4 @@ projectBtn.forEach((btn) => btn.addEventListener('click', () => {
   populatePopupWindow(Array.prototype.indexOf.call(projectBtn, btn));
 }));
 
-closeBtn.addEventListener('click', () => {
-  popupOverlay.classList.remove('active');
-  body.classList.remove('active');
-  popupBg.classList.remove('active');
-});
+
