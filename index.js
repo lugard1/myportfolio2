@@ -14,6 +14,7 @@ const liveLink = document.querySelector('.live-link');
 const sourceLink = document.querySelector('.source-link');
 const skillsList = document.querySelector('#popup-skills-buttons');
 const popupBg = document.querySelector('#popup-bg');
+const popupContent = document.querySelector('#popup-content');
 
 const projectCards = [
   {
@@ -83,24 +84,63 @@ projectCards.forEach((project) => {
   projectsDiv.appendChild(projectCard);
 });
 
-const ul = document.createElement('ul');
-ul.className = 'project-languages';
-skillsList.prepend(ul);
-
-function populatePopupWindow(index) {
-  ul.innerHTML = '';
-  popupHeader.innerText = projectCards[index].name;
-  popupImg.src = projectCards[index].image;
-  popupDescription.innerText = projectCards[index].description;
-  projectCards[index].technologies.forEach((skill) => {
-    const li = document.createElement('li');
-    li.className = 'language';
-    li.innerText = skill;
-    ul.appendChild(li);
-  });
-  liveLink.href = projectCards[index]['live link'];
-  sourceLink.href = projectCards[index]['source link'];
+const closeModal = () => {
+  popupOverlay.style.display = 'none'
 }
+
+window.onclick = function modal(e) {
+  if(e.target === popupOverlay) {
+    popupOverlay.style.display = 'none'
+  }
+}
+function populatePopupWindow (index){
+  const myPopup = projectCards[index]
+  popupOverlay.innerHTML = ` <div id="popup-content">
+  <div id="popup-title">
+    <h2>${myPopup.name}</h2>
+    <div class="close-btn">&times;</div>
+  </div>
+  <p class="project-info">
+    <span class="project-company">CANOPY</span>
+    <span><img src="./images/Counter.png" alt="counter"></span>
+    <span class="project-type">Back End Dev</span>
+    <span><img src="./images/Counter.png" alt="counter"></span>
+    <span class="project-year">2015</span>
+  </p>
+  <img id="popup-img" src="${myPopup.image}" alt="project screenshot">
+  <div id="popup-details">
+    <p id="popup-description">${myPopup.description}</p>
+    <div id="popup-skills-buttons">
+      <div id="popup-buttons">
+        <a class="enabled-btn live-link" target="_blank" rel="noopener" href="${myPopup['live link']}">See Live<i
+            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <a class="enabled-btn source-link" target="_blank" rel="noopener" href="${myPopup['source link']}">See Source<i
+            class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</div>`
+popupOverlay.style.display = 'block'
+}
+
+// const ul = document.createElement('ul');
+// ul.className = 'project-languages';
+// skillsList.prepend(ul);
+
+// function populatePopupWindow(index) {
+//   ul.innerHTML = '';
+//   popupHeader.innerText = projectCards[index].name;
+//   popupImg.src = projectCards[index].image;
+//   popupDescription.innerText = projectCards[index].description;
+//   projectCards[index].technologies.forEach((skill) => {
+//     const li = document.createElement('li');
+//     li.className = 'language';
+//     li.innerText = skill;
+//     ul.appendChild(li);
+//   });
+//   liveLink.href = projectCards[index]['live link'];
+//   sourceLink.href = projectCards[index]['source link'];
+// }
 
 const projectBtn = document.querySelectorAll('.project .enabled-btn');
 projectBtn.forEach((btn) => btn.addEventListener('click', () => {
@@ -111,7 +151,7 @@ projectBtn.forEach((btn) => btn.addEventListener('click', () => {
 }));
 
 closeBtn.addEventListener('click', () => {
-  popupOverlay.classList.remove('active');
+  popupContent.style.display = 'none'
   body.classList.remove('active');
   popupBg.classList.remove('active');
 });
