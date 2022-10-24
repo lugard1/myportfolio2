@@ -167,3 +167,37 @@ form.addEventListener('submit', (event) => {
     form.submit();
   }
 });
+
+const formData = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const msgInput = document.getElementById('message');
+
+nameInput.addEventListener('input', () => {
+  formData.name = nameInput.value;
+  localStorage.setItem('data', JSON.stringify(formData));
+});
+
+emailInput.addEventListener('input', () => {
+  formData.email = emailInput.value;
+  localStorage.setItem('data', JSON.stringify(formData));
+});
+
+msgInput.addEventListener('input', () => {
+  formData.message = msgInput.value;
+  localStorage.setItem('data', JSON.stringify(formData));
+});
+
+if (localStorage.getItem('data')) {
+  let formObject = localStorage.getItem('data');
+  formObject = JSON.parse(formObject);
+
+  document.getElementById('name').value = formObject.name;
+  document.getElementById('email').value = formObject.email;
+  document.getElementById('message').value = formObject.message;
+}
