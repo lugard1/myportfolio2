@@ -11,7 +11,7 @@ For the first milestone in the process of creating your portfolio website, you w
 - build the first 2 sections of the mobile website using the template you chose in the previous step.
 
 ## Built With 
-- html and css.
+- html, css, and JavaScript.
 - Visual Studio Code, Git and Github, Gitbash.
 
 ## Prerequisites
@@ -39,7 +39,7 @@ Feel free to check the issues page.
 - etc
 
 ## License
-This project is MIT licensed.
+This project is [MIT](LICENSE) licensed.
 
 Note: we recommend using the MIT license- you can set it up quickly by using templates available on Github.
 

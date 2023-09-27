@@ -6,40 +6,70 @@ const projectsDiv = document.getElementById('works');
 const popupOverlay = document.querySelector('#popup-overlay');
 const projectCards = [
   {
-    name: 'Tonic',
+    name: 'YoYacht',
+    date: '2023',
+    type: 'React Front-End',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: './images/SnapshootPortfolio1.svg',
-    technologies: ['html', 'css', 'javaScript', 'github'],
-    'live link': 'https://lugard1.github.io/myportfolio2/',
+      'YoYacht is an app for booking an appointment to try a yacht; accounts or sign-ups required.',
+    image: './images/yachtBookingApp2.png',
+    technologies: ['html', 'Tailwind', 'React', 'Ruby on Rails'],
+    'live link': 'https://yacht-booking-app.onrender.com',
     'source link': 'https://github.com/lugard1/myportfolio2',
   },
   {
-    name: 'Multi-Post Stories',
+    name: 'Budget APP',
+    date: '2023',
+    type: 'React Front-End',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: './images/SnapshootPortfolio2.svg',
-    technologies: ['html', 'css', 'javaScript', 'ruby'],
-    'live link': 'https://lugard1.github.io/myportfolio2/',
-    'source link': 'https://github.com/lugard1/myportfolio2',
+      'The budget app is a mobile web application where a user can manage budget; accounts or sign-ups required.',
+    image: './images/budgetAppForPortfolio.png',
+    technologies: ['Rails', 'Bootstrap', 'Postgres'],
+    'live link': 'https://budget-app-8r1m.onrender.com/',
+    'source link': 'https://github.com/lugard1/budget-app',
   },
   {
-    name: 'Tonic',
+    name: 'Weather APP',
+    date: '2022',
+    type: 'React Front-End',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: './images/SnapshootPortfolio3.svg',
-    technologies: ['html', 'css', 'javaScript'],
-    'live link': 'https://lugard1.github.io/myportfolio2/',
-    'source link': 'https://github.com/lugard1/myportfolio2',
+      'Weather App is a React-based weather forecasting app that provides users with information about countries.',
+    image: './images/weatherForecastApp.png',
+    technologies: ['React', 'css', 'javaScript'],
+    'live link': 'https://weather-forecast-appi.onrender.com',
+    'source link': 'https://github.com/lugard1/weather-forecast-app',
   },
   {
-    name: 'Multi-Post Stories',
+    name: "Space Traveler's Hub",
+    date: '2022',
+    type: 'React Front-End',
     description:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: './images/SnapshootPortfolio4.svg',
-    technologies: ['html', 'css', 'javaScript', 'bootstrap'],
-    'live link': 'https://lugard1.github.io/myportfolio2/',
-    'source link': 'https://github.com/lugard1/myportfolio2',
+      '  An App that provides commercial and scientific space travel services, for users rockets bookings and missions.',
+    image: './images/spaceTravelersHub.png',
+    technologies: ['React', 'Redux', 'CSS'],
+    'live link': 'https://space-travellers-hub-l24h.onrender.com',
+    'source link': 'https://github.com/lugard1/space-travellers-hub',
+  },
+  {
+    name: 'Math Magicians',
+    date: '2023',
+    type: 'React Front-End',
+    description:
+      '  An SPA project with three pages: the Home page, Calculator Page, Quote page for simple calculations.',
+    image: './images/mathMagician.png',
+    technologies: ['React', 'JavaScript', 'CSS'],
+    'live link': 'https://math-magicians-ii.onrender.com/',
+    'source link': 'https://github.com/lugard1/math-magicians-ii',
+  },
+  {
+    name: 'Book Store',
+    date: '2022',
+    type: 'React Front-End',
+    description:
+      'Book Store is a React app, that allows user to see a book list, update a book, and also delete book from the book list.',
+    image: './images/bookStore.png',
+    technologies: ['React', 'Redux', 'CSS'],
+    'live link': 'https://bookstorei.onrender.com/',
+    'source link': 'https://github.com/lugard1/book-storei',
   },
 ];
 
@@ -62,9 +92,9 @@ projectCards.forEach((project) => {
   projectCard.className = 'project';
   projectCard.innerHTML = `<img class='project-screenshot' src='${
     project.image
-  }' alt='screenshot of Tonic project'> <div class='project-div'> <h2 class='project-title'>${
+  }' alt='screenshot of YoYacht project'> <div class='project-div'> <h2 class='project-title'>${
     project.name
-  }</h2> <p class='project-info'> <span class='project-company'>CANOPY</span> <span><img src='./images/Counter.png' alt=' '></span> <span class='project-type'>Back End Dev</span> <span><img src='./images/Counter.png' alt=' '></span> <span class='project-year'>2015</span> </p> <p class='project-description'>${
+  }</h2> <p class='project-info'> <span class='project-company'>React Front-End</span> <span><img src='./images/Counter.png' alt=' '></span> <span class='project-type'>Back End Dev</span> <span><img src='./images/Counter.png' alt='counter'></span> <span class='project-year'>${project.date}</span> </p> <p class='project-description'>${
     project.description
   }</p> <ul class='project-languages'>${project.technologies
     .map((tech) => `<li class='language'>${tech}</li>`)
@@ -91,11 +121,11 @@ function populatePopupWindow(index) {
     <div class="close-btn" onclick="closeModal()">&times;</div>
   </div>
   <p class="project-info">
-    <span class="project-company">CANOPY</span>
+    <span class="project-company">${myPopup.type}</span>
     <span><img src="./images/Counter.png" alt="counter"></span>
     <span class="project-type">Back End Dev</span>
     <span><img src="./images/Counter.png" alt="counter"></span>
-    <span class="project-year">2015</span>
+    <span class="project-year">${myPopup.date}</span>
   </p>
   <img id="popup-img" src="${myPopup.image}" alt="project screenshot">
   <div id="popup-details">

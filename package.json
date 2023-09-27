@@ -50,7 +50,6 @@
     "call-bind": "^1.0.2",
     "callsites": "^3.1.0",
     "camelcase-keys": "^6.2.2",
-    "caniuse-lite": "^1.0.30001412",
     "chalk": "^4.1.2",
     "character-entities": "^1.2.4",
     "character-entities-legacy": "^1.1.4",
