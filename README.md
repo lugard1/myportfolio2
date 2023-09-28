@@ -34,6 +34,7 @@ contributions, issues, and feature requests are welcome!
 Feel free to check the issues page.
 
 ## Acknowledgements
+- Special thanks goes to Vecteezy for the provision of background image, and also Microverse for this ample opportunity.
 - Hat tip to any one who supported in this work
 - Inspiration
 - etc
