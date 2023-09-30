@@ -146,8 +146,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin-bottom: 10px;
   gap: 2px;
+}
+
+.animation {
+  padding: 1px;
 }
 
 .animation0 {
@@ -156,16 +161,17 @@ header {
   background: gray;
   color: #fff;
   text-align: center;
+  align-items: center;
   animation-name: effect;
-  animation-duration: 6s;
+  animation-duration: 20s;
 }
 
 @keyframes effect {
-  0% { background: gray; }
+  0% { background: yellowgreen; }
   25% { background: red; }
-  50% { background: green; }
+  50% { background: indigo; }
   75% { background: pink; }
-  100% { background: violet; }
+  100% { background: green; }
 }
 
 .animation1 {
@@ -175,7 +181,7 @@ header {
   color: #fff;
   text-align: center;
   animation-name: effect1;
-  animation-duration: 10s;
+  animation-duration: 20s;
 }
 
 @keyframes effect1 {
@@ -193,7 +199,7 @@ header {
   color: #fff;
   text-align: center;
   animation-name: effect2;
-  animation-duration: 14s;
+  animation-duration: 20s;
 }
 
 @keyframes effect2 {
@@ -201,7 +207,7 @@ header {
   25% { background: green; }
   50% { background: black; }
   75% { background: yellow; }
-  100% { background: violet; }
+  100% { background: goldenrod; }
 }
 
 .name-frame {
