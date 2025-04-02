@@ -47,4 +47,4 @@ Note: we recommend using the MIT license- you can set it up quickly by using tem
 You can also use any other license if you wish.
 
 ## Update
-Link to online version of myportfolio2: https://lugard1.github.io/myportfolio2/
+Link to online version of: [myportfolio](https://lugard1.github.io/myportfolio2/)
